@@ -1,6 +1,6 @@
-# Proyecto Final de programación con Python - EcoTech Solutions
+# Trabajo final del Curso programación con Python - FESaT
 
-Este es el repositorio oficial del **Proyecto Final FESaT** para la empresa **EcoTech Solutions**. Este repositorio contiene una solución modular estructurada en tres ejercicios independientes que abarcan desde el procesamiento de datos crudos de microcontroladores y la programación orientada a objetos (POO), hasta la auditoría automatizada y el despliegue de un panel administrativo web en **Django**.
+Este es el repositorio oficial del **Proyecto final** para la empresa **EcoTech Solutions**. Este repositorio contiene una solución modular estructurada en tres ejercicios independientes que abarcan desde el procesamiento de datos crudos de microcontroladores y la programación orientada a objetos (POO), hasta la auditoría automatizada y el despliegue de un panel administrativo web en **Django**.
 
 ---
 
