@@ -8,12 +8,14 @@ Este es el repositorio oficial del **Proyecto Final FESaT** para la empresa **Ec
 
 El proyecto se encuentra organizado en tres carpetas principales:
 
-trabajoFinal/
+```text
+ecotech_solutions_proyecto_final/
 ├── ejercicio_1_sensores/      # Sanitización y procesamiento de datos térmicos
 ├── ejercicio_2_inventario/    # Modelo POO, validación de stock y persistencia JSON
 ├── ejercicio_3_django/        # Auditoría con unittest e integración Web en Django
 ├── .gitignore                 # Archivos e historiales ignorados por Git
 └── README.md                  # Documentación principal del repositorio
+```
 
 ---
 
@@ -53,7 +55,7 @@ trabajoFinal/
 
 ---
 
-## 🛠️ Guía para ejecutar el proyecto Django (Ejercicio 3)
+## Guía para ejecutar el proyecto Django (Ejercicio 3)
 
 Los comandos para levantar el entorno web localmente:
 
