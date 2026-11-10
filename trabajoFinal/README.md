@@ -9,7 +9,7 @@ Este es el repositorio oficial del **Proyecto Final FESaT** para la empresa **Ec
 El proyecto se encuentra organizado en tres carpetas principales:
 
 ```text
-ecotech_solutions_proyecto_final/
+trabajoFinal/
 ├── ejercicio_1_sensores/      # Sanitización y procesamiento de datos térmicos
 ├── ejercicio_2_inventario/    # Modelo POO, validación de stock y persistencia JSON
 ├── ejercicio_3_django/        # Auditoría con unittest e integración Web en Django
@@ -27,10 +27,10 @@ ecotech_solutions_proyecto_final/
   * Limpieza explícita de caracteres y asignación de ubicaciones por defecto seguro.
   * Reporte estadístico global (promedio térmico y detección de sensores en alerta según un umbral dinámico).
 * **Ejecución:**
-  
+```  
   cd ejercicio_1_sensores/
   python main.py
-  
+```  
 ---
 
 ### 2. Ejercicio 2: Modelo de inventario, excepciones y JSON (`ejercicio_2_inventario/`)
@@ -40,10 +40,10 @@ ecotech_solutions_proyecto_final/
   * Jerarquía de clases (`DispositivoEcológico` -> `PanelSolar`) aplicando encapsulamiento y polimorfismo.
   * Exportación serializada al archivo `catalogo_ecotech.json` mediante `GestorInventario`.
 * **Ejecución:**
-  
+```  
   cd ejercicio_2_inventario/
   python main.py
-  
+```  
 ---
 
 ### 3. Ejercicio 3: Auditoría automatizada y proyecto Web (`ejercicio_3_django/`)
@@ -60,37 +60,38 @@ ecotech_solutions_proyecto_final/
 Los comandos para levantar el entorno web localmente:
 
 ### 1. Clonar el repositorio y navegar a la carpeta del ejercicio
-
+```
 git clone <URL_DE_TU_REPOSITORIO_GITHUB>
 cd ecotech_solutions_proyecto_final/ejercicio_3_django/
-
+```
 
 ### 2. Instalar las dependencias
 *(Se recomienda activar previamente un entorno virtual)*
-
+```
 pip install -r requirements.txt
-
+```
 
 ### 3. Ejecutar las pruebas unitarias (auditoría)
 Para certificar que el algoritmo de emisiones de carbono cumple con todos los estándares requeridos:
-
+```
 python manage.py test sustentabilidad
-
+```
 
 ### 4. Aplicar las migraciones base de Django
-
+```
 python manage.py migrate
-
+```
 
 ### 5. Iniciar el servidor web de desarrollo
-
+```
 python manage.py runserver
-
+```
 
 ### 6. Acceder a la interfaz web
 Desde el navegador ingresar a:
+```
 *`http://127.0.0.1:8000/sustentabilidad/`** *(o simplemente `http://127.0.0.1:8000/`)*
-
+```
 ---
 
 ## Tecnologías utilizadas
