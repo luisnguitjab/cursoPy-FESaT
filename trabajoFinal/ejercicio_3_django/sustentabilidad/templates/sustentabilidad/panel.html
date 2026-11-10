@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo_panel }}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .card {
+            background-color: #eef9f2;
+            border-left: 5px solid #27ae60;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .card-alert {
+            background-color: #fdf2e9;
+            border-left-color: #e67e22;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+        .card .value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #27ae60;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌱 {{ titulo_panel }}</h1>
+        <p>Reporte consolidado de auditoría energética y huella de carbono industrial de <strong>EcoTech Solutions</strong>.</p>
+        
+        <div class="metrics-grid">
+            <div class="card">
+                <h3>Total Emisiones Estimadas</h3>
+                <div class="value">{{ total_emisiones_co2 }} kg CO₂</div>
+            </div>
+            <div class="card card-alert">
+                <h3>Planta de Mayor Consumo</h3>
+                <div class="value">{{ planta_critica }}</div>
+                <small>{{ max_consumo_kwh }} kWh</small>
+            </div>
+        </div>
+
+        <h2>Detalle de Instalaciones Industriales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Planta Industrial</th>
+                    <th>Consumo Eléctrico (kWh)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registro in registros_plantas %}
+                <tr>
+                    <td>{{ registro.planta }}</td>
+                    <td>{{ registro.consumo_kwh }} kWh</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2">No hay registros de consumo disponibles.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

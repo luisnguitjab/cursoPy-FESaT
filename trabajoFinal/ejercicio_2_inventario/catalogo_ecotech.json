@@ -1,0 +1,17 @@
+[
+    {
+        "tipo": "PanelSolar",
+        "modelo": "EcoSun-Max Pro",
+        "precio_ars": 374987.5,
+        "moneda": "ARS",
+        "stock": 15,
+        "potencia_w": 450.0
+    },
+    {
+        "tipo": "DispositivoEcológico",
+        "modelo": "Filtro Purificador H2O-Eco",
+        "precio_ars": 106875.0,
+        "moneda": "ARS",
+        "stock": 30
+    }
+]
